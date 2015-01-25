@@ -1,4 +1,4 @@
-# Foundation Compass Template
+# Foundation Compass Chambre Sonore Template
 
 The easiest way to get started with Foundation + Compass.
 

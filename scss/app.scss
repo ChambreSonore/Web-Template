@@ -1,40 +1,70 @@
 @import "settings";
 @import "foundation";
+@import "compass/css3";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+#home, #page2{
+  min-height: 100vh;
+}
+
+#concept, #previousRooms, #volunteer, footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#home {
+  margin-top: -$topbar-height;
+  @include background(url('../images/cdj.jpg') no-repeat center center);
+  @include background-size(cover);
+  color: $ghost;
+  font-size: 30vh;
+  padding-top: 30vh;
+  i{
+    cursor: pointer;
+  }
+}
+
+#concept{
+  min-height: 40vh;
+  i{
+    font-size: 4em;
+  }
+}
+
+#previousRooms{
+  min-height: 60vh;
+  h2{
+    margin-bottom: 1em;
+  }
+  background-color: $white-smoke;
+}
+
+#volunteer{
+  h2{
+    margin-bottom: 1em;
+  }
+  min-height: 85vh;
+}
+
+footer{
+  min-height: 15vh;
+  background-color: $tuatara;
+  color: $iron;
+}
+
+.photo-upload{
+  min-height: 150px;
+}
+
+.circle{
+  float: right;
+  margin-left: 10px;
+  height: 1.5em;
+  width: 1.5em;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: $iron;
+  color: $tuatara;
+  font-size: 3em;
+}
